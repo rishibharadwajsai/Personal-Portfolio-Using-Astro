@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Rishi Bharadwaj Sai">
   <main>
-    <center class="mt-44">
+    <center class="mt-40">
       <div class="hero-img w-44 h-44"></div>
       <div
         class="home-content mt-8 w-52 sm:w-60 md:w-72 lg:w-96 text-wrap slide-in"
@@ -18,6 +18,28 @@ import Layout from "../layouts/Layout.astro";
           creative journey and innovative projects. Discover how I turn concepts
           into impactful results.
         </p>
+
+        <button
+          type="button"
+          class="my-2 text-white know-btn font-light rounded-lg text-sm px-3 py-0 text-center inline-flex items-center"
+        >
+          <a href="/About">Know about me</a>
+
+          <svg
+            class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+          </svg>
+        </button>
 
         <MainSocialMedia />
       </div>
@@ -76,6 +98,13 @@ import Layout from "../layouts/Layout.astro";
         transform: translateX(0);
         opacity: 1;
       }
+    }
+
+    .know-btn {
+      background: rgba(255, 255, 255, 0.379);
+      border-radius: 16px;
+      box-shadow: 4px 4px 30px rgba(151, 151, 151, 0.468);
+      border: 1px solid rgba(255, 255, 255, 0.68);
     }
   </style>
 </Layout>
