@@ -1,61 +1,43 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+  title: string;
+  body: string;
+  src: string;
 }
 
-const { href, title, body } = Astro.props;
+const { src, title, body } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div
+  class="card w-auto h-auto md:w-[400px] md:h-56 my-10 py-10 me-10 flex flex-col justify-center text-center place-items-center md:place-items-start align-middle md:flex-row md:justify-normal md:text-start text-white"
+>
+  <div class="img-container flex justify-center px-2 mb-3">
+    <img src={src} alt="" />
+  </div>
+  <div class="px-2">
+    <h1 class="mb-2 text-xl font-bold">
+      {title}
+    </h1>
+    <p class="text-center md:text-start md:w-4/5 font-light">
+      {body}
+    </p>
+  </div>
+</div>
+
 <style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #23262d;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
-		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
-	}
+  .img-container {
+    width: 40%;
+    height: 100%;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px rgb(36, 36, 36);
+    border: 1px solid rgba(255, 255, 255, 0.368);
+  }
 </style>

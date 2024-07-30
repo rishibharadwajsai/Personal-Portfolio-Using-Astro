@@ -1,0 +1,63 @@
+---
+import Card from "./Card.astro";
+---
+
+<div class="max-w-screen-xl flex flex-wrap mx-auto mt-10 rounded">
+  <h1 class="text-white text-2xl ps-4 my-4 font-extrabold whatido-title">
+    What I DO
+  </h1>
+  <div class="flex flex-wrap ps-4 slide-up">
+    <Card
+      title="Data Structures and Algorithms"
+      body="Right here is where the journey to solving real-life problems begins, through the art of logic-building and development."
+      src="https://play-lh.googleusercontent.com/a4Xrc-8oQLu05mOrNPuvA_o2nZEIEnOoTH4wB91Slw_hCvuIu_Qgi440bK9mC8ml-KA"
+    />
+    <Card
+      title="Artificial Intelligence and Machine Learning"
+      body="Exploring the vastness of this very field as a naive learner but yet with an inquisitive mind."
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png"
+    />
+    <Card
+      title="Full-stack Web Development"
+      body="Right here is where the journey to solving real-life problems begins, through the art of logic-building and development."
+      src="https://cdn-icons-png.flaticon.com/512/9414/9414296.png"
+    />
+    <Card
+      title="Self Development"
+      body="Exploring new domain of dimensions in my personality and working 120% of my capacity in honing the gained skills on daily basis."
+      src="https://cdn-icons-png.flaticon.com/512/10068/10068898.png"
+    />
+  </div>
+</div>
+
+<style>
+  .whatido-title {
+    position: relative;
+  }
+
+  .whatido-title::before {
+    position: absolute;
+    content: " ";
+    top: 35px;
+    background-color: white;
+    width: 45%;
+    height: 4px;
+  }
+
+  .slide-up {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>

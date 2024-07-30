@@ -39,6 +39,21 @@ const { title } = Astro.props;
     background-color: black;
   }
 
+  html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.244);
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.368);
+  }
+
   body {
     position: relative;
     background: url(/images/galaxy-night-image.png);
