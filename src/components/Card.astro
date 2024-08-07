@@ -9,7 +9,7 @@ const { src, title, body } = Astro.props;
 ---
 
 <div
-  class="card w-auto h-auto md:w-[400px] md:h-56 my-10 py-10 me-10 flex flex-col justify-center text-center place-items-center md:place-items-start align-middle md:flex-row md:justify-normal md:text-start text-white"
+  class="card w-auto h-auto md:w-[400px] md:h-60 my-10 py-10 me-10 flex flex-col justify-center text-center place-items-center md:place-items-start align-middle md:flex-row md:justify-normal md:text-start text-white"
 >
   <div class="img-container flex justify-center px-2 mb-3">
     <img src={src} alt="" />
@@ -18,7 +18,7 @@ const { src, title, body } = Astro.props;
     <h1 class="mb-2 text-xl font-bold">
       {title}
     </h1>
-    <p class="text-center md:text-start md:w-4/5 font-light">
+    <p class="text-center md:text-start font-light">
       {body}
     </p>
   </div>

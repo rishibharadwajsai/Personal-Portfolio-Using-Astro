@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  degree: string;
+  location: string;
+  time: string;
+  grade: string;
+}
+
+const { degree, title, location, time, grade } = Astro.props;
+---
+
+<div
+  class="card w-auto h-full py-10 me-10 flex flex-col place-items-start align-middle text-start text-white ms-6 ps-8 border-l-2 relative"
+>
+  <div class="h-4 w-4 circle -left-2 top-14"></div>
+  <div class="flex flex-col p-3 w-full sm:w-96 rounded border card-background">
+    <p>{degree}</p>
+    <h1 class="text-xl font-semibold">{title}</h1>
+    <p class="mt-2 text-sm">{location}</p>
+    <p class="font-medium">{time}</p>
+    <p class="text-sm mt-1">Grade: {grade}</p>
+  </div>
+</div>
+
+<style>
+  .circle {
+    border: 2px solid white;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .card-background {
+    background: rgba(255, 255, 255, 0.151);
+    box-shadow: 0 8px 32px 0 rgba(113, 113, 117, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+</style>
