@@ -1,9 +1,33 @@
 ---
+import Education from "../components/Education.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Resume - Rishi Bharadwaj Sai">
-  <center>
-    <h1 class="text-2xl text-white mt-10">Updating soon.......</h1>
-  </center>
+  <div class="max-w-screen-xl flex flex-col flex-wrap  mx-auto mt-10 rounded ">
+    <h1 class="text-white text-2xl my-4 font-extrabold resume-title ps-4">
+      Resume
+    </h1>
+
+    <Education />
+
+    <center class="text-white text-2xl my-10 font-extrabold ps-4">
+      Updating soon......
+    </center>
+  </div>
 </Layout>
+
+<style>
+  .resume-title {
+    position: relative;
+  }
+
+  .resume-title::before {
+    position: absolute;
+    content: " ";
+    top: 35px;
+    background-color: white;
+    width: 40px;
+    height: 4px;
+  }
+</style>
