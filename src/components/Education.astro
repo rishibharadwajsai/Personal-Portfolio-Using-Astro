@@ -1,0 +1,36 @@
+---
+import EducationCard from "./EducationCard.astro";
+---
+
+<div>
+  <h1 class="text-white text-2xl mt-10 mb-3 flex items-center ps-1 font-bold">
+    <img
+      src="https://icons.veryicon.com/png/o/education-technology/blue-gray-solid-blend-icon/academic-degree-1.png"
+      alt="education icon"
+      class="w-12 h-12 mr-2"
+    />
+    Education
+  </h1>
+
+  <EducationCard
+    degree="B.Tech"
+    title="Vellore Institute of Technology"
+    location="Chennai"
+    time="2022 - present"
+    grade="9.32"
+  />
+  <EducationCard
+    degree="XII"
+    title="Sri Chaitanya Junior College"
+    time="2020 - 2022"
+    location="Hyderabad"
+    grade="98.3%"
+  />
+  <EducationCard
+    degree="X"
+    title="Noble High School"
+    time="2020"
+    location="Chirala"
+    grade="95.5%"
+  />
+</div>
