@@ -57,33 +57,29 @@ const { title } = Astro.props;
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-  html {
-    background-color: black;
-  }
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
   html::-webkit-scrollbar {
     width: 10px;
   }
 
   html::-webkit-scrollbar-track {
-    background: black;
+    background: rgb(255, 255, 255);
   }
 
   html::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.244);
+    background: rgba(0, 0, 0, 0.244);
     border-radius: 16px;
-    box-shadow: 4px 4px 30px rgb(255, 255, 255);
-    border: 1px solid rgba(255, 255, 255, 0.368);
+    box-shadow: 4px 4px 30px rgb(0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0.368);
   }
 
   body {
     position: relative;
-    background: url(/images/galaxy-night-image.png);
-    background-position: center;
-    background-size: cover;
     min-height: 100vh;
     width: 100%;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", "Ubuntu", sans-serif;
+    background-color: #ffffff;
   }
 
   body::after {
