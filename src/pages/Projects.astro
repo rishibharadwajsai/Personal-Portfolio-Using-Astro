@@ -5,42 +5,61 @@ import ProjectCard from "../components/ProjectCard.astro";
 
 <Layout title="Projects - Rishi Bharadwaj Sai">
   <div
-    class="max-w-screen-xl flex flex-wrap mx-auto mt-10 rounded justify-center lg:justify-start"
+    class="max-w-screen-xl flex flex-wrap mx-auto mt-10 rounded justify-center lg:justify-start slide-up"
   >
     <ProjectCard
       title="BITWARS 2024"
-      description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      link=""
-      github=""
+      description="The Bitwars project is a static web page designed for a competitive coding event, sponsored by Unstop."
+      link="https://bitwars.ieeecsvitc.com/"
+      github="https://github.com/ComputerSocietyVITC/bitwars-24"
       image="/images/Bitwars-image.png"
     />
     <ProjectCard
       title="Flappy Bird - OpenCV"
-      description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      link=""
-      github=""
+      description="Face-Controlled Flappy Bird is an interactive game where you control a bird's vertical movement using facial gestures detected by a webcam."
+      link="https://github.com/rishibharadwajsai/FlappyBird-OpenCV"
+      github="https://github.com/rishibharadwajsai/FlappyBird-OpenCV"
       image="https://automaticaddison.com/wp-content/uploads/2020/05/flappy-bird-in-3d.png"
     />
     <ProjectCard
       title="Health Care Center"
-      description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      link=""
-      github=""
+      description="This project explores the prediction of cardiac disease probability using a dataset of health metrics."
+      link="https://healthcarecenterapp.onrender.com/"
+      github="https://github.com/rishibharadwajsai/Health-care-center"
       image="/images/Health-care-image.png"
     />
     <ProjectCard
       title="Social Media App"
-      description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      link=""
-      github=""
+      description="React Social Media App is a lightweight web application built using React.js, designed to facilitate posting and viewing of user-generated content."
+      link="https://reactsocialmediaapp.vercel.app/"
+      github="https://github.com/rishibharadwajsai/social-media-app"
       image="/images/Social-media-image.png"
     />
     <ProjectCard
       title="OCR - Handwritten text Recognition"
-      description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      link=""
-      github=""
+      description="This repository features a ReactJS-based whiteboard for handwritten text input, integrated with a TensorFlow 2.x HTR system trained on multiple datasets."
+      link="https://github.com/rishibharadwajsai/OCR-Handwritten-text-recognition"
+      github="https://github.com/rishibharadwajsai/OCR-Handwritten-text-recognition"
       image="https://research.aimultiple.com/wp-content/uploads/2020/04/handwritingrecognition1.png"
     />
   </div>
 </Layout>
+
+<style>
+  .slide-up {
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>

@@ -11,11 +11,11 @@ const { title, description, link, github, image } = Astro.props;
 ---
 
 <div class="max-w-sm border border-gray-200 rounded-lg shadow m-3">
-  <a href={link}>
+  <a href={link} target="_blank">
     <img class="rounded-t-lg h-48 w-full" src={image} alt="" />
   </a>
   <div class="p-5">
-    <a href={link}>
+    <a href={link} target="_blank">
       <h5
         class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white"
       >
@@ -26,7 +26,8 @@ const { title, description, link, github, image } = Astro.props;
       {description}
     </p>
     <a
-      href={link}
+      href={github}
+      target="_blank"
       class="inline-flex items-center px-3 py-2 text-sm text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold"
     >
       Github
@@ -44,6 +45,7 @@ const { title, description, link, github, image } = Astro.props;
     </a>
     <a
       href={link}
+      target="_blank"
       class="inline-flex items-center px-3 py-2.5 text-sm text-center text-black bg-white rounded-lg hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold ms-2"
     >
       Visit It
