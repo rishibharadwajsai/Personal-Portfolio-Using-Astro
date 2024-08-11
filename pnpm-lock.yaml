@@ -20,6 +20,9 @@ importers:
       flowbite:
         specifier: ^2.4.1
         version: 2.4.1(rollup@4.19.1)
+      framer-motion:
+        specifier: ^11.3.24
+        version: 11.3.24
       tailwindcss:
         specifier: ^3.4.7
         version: 3.4.7
@@ -1014,6 +1017,20 @@ packages:
 
   fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
+
+  framer-motion@11.3.24:
+    resolution: {integrity: sha512-kl0YI7HwAtyV0VOAWuU/rXoOS8+z5qSkMN6rZS+a9oe6fIha6SC3vjJN6u/hBpvjrg5MQNdSnqnjYxm0WYTX9g==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3134,6 +3151,10 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
+  framer-motion@11.3.24:
+    dependencies:
+      tslib: 2.6.3
+
   fsevents@2.3.3:
     optional: true
 
@@ -4215,8 +4236,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.4
 
-  tslib@2.6.3:
-    optional: true
+  tslib@2.6.3: {}
 
   type-fest@2.19.0: {}
 
