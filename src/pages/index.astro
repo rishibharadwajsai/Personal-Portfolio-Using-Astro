@@ -10,13 +10,13 @@ import Layout from "../layouts/Layout.astro";
       <div
         class="home-content mt-8 w-52 sm:w-60 md:w-72 lg:w-96 text-wrap slide-in"
       >
-        <h1 class="text-black font-extrabold text-2xl text-center w-full">
+        <h1 class="text-white font-extrabold text-2xl text-center w-full">
           I'm <span
             class="text-3xl"
             >&lt;Rishi Bharadwaj Sai&gt;</span
           >
         </h1>
-        <p class="text-gray-700 text-center font-normal mt-2 text-sm">
+        <p class="text-gray-200 text-center font-normal mt-2 text-sm">
           Excited to unveil my portfolio. Browse through to see highlights of my
           creative journey and innovative projects. Discover how I turn concepts
           into impactful results.
@@ -24,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
 
         <button
           type="button"
-          class="my-2 text-black know-btn font-light rounded-lg text-sm px-3 py-0 text-center inline-flex items-center"
+          class="my-2 text-white know-btn font-light rounded-lg text-sm px-3 py-0 text-center inline-flex items-center"
         >
           <a href="/About">Know about me</a>
 
@@ -52,12 +52,12 @@ import Layout from "../layouts/Layout.astro";
   <style>
     .hero-img {
       position: relative;
-      border: 3px solid rgb(62, 57, 57);
+      border: 3px solid rgb(255, 255, 255);
       border-radius: 50%;
       background-image: url(/images/rishi-image.jpeg);
       background-position: center;
       background-size: cover;
-      box-shadow: 0 0px 300px rgba(0, 0, 0, 0.712);
+      box-shadow: 0 0px 300px rgba(255, 255, 255, 0.712);
       animation: upDown 2s infinite;
     }
 
@@ -69,7 +69,7 @@ import Layout from "../layouts/Layout.astro";
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background: rgba(67, 61, 61, 0.103);
+      background: rgba(105, 103, 103, 0.217);
       pointer-events: none;
     }
 
@@ -105,18 +105,18 @@ import Layout from "../layouts/Layout.astro";
     .know-btn {
       /* background: rgba(0, 0, 0, 0.379); */
       border-radius: 16px;
-      box-shadow: 0px 0px 30px rgba(128, 117, 117, 0.468);
-      border: 1px solid rgba(0, 0, 0, 0.68);
+      box-shadow: 0px 0px 30px rgba(240, 235, 235, 0.468);
+      border: 1px solid rgba(255, 255, 255, 0.68);
       transition: transform 0.3s ease-in-out;
     }
 
     .know-btn:hover {
       transform: scale(1.1);
     }
-    button,
+    /* button,
     a {
       cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNNC41Ljc5djIyLjQybDYuNTYtNi41N2g5LjI5TDQuNS43OXoiPjwvcGF0aD48L3N2Zz4="),
         auto;
-    }
+    } */
   </style>
 </Layout>
