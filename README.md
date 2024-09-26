@@ -1,3 +1,5 @@
+![Portfolio Screenshot](public/images/portfolio-screenshot.png)
+
 # 🌟 Rishi Bharadwaj Sai: Personal-Portfolio
 
 Welcome to my portfolio project repository! This is where creativity meets technology. Through this project, I aim to showcase my journey as an Electronics and Computer Engineering student, highlighting my passion for innovation, coding, and problem-solving.
